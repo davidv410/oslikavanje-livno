@@ -8,9 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 const router = createBrowserRouter([
   {path: "/", element: <App/>},
   {path: "/admin", element: <Admin/>}
-], {
-  basename: '/oslikavanje-livno'
-})
+])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
