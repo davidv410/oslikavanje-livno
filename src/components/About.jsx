@@ -32,7 +32,7 @@ const About = forwardRef((props, ref) => {
                     </div>
                     <div className='img-div'>
                         <div className='filter'>
-                            <div style={{ backgroundImage: "url(/proizvodi/aboutslika.jpg)" }} className="about-slika"></div>
+                            <div style={{ backgroundImage: "url(/oslikavanje-livno/proizvodi/aboutslika.jpg)" }} className="about-slika"></div>
                         </div>
                     </div>
                 </div>

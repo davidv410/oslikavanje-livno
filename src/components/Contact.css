@@ -1,8 +1,6 @@
-body{
-    overflow-x: hidden;
-}
 
 .contact-cont-wrap {
+    overflow: hidden;
     width: 100%;
     height: fit-content;
     display: flex;

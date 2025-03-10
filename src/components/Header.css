@@ -86,6 +86,7 @@
 
 .ham-menu {
     display: none;
+    color: var(--textColor);
 }
 
 .dropdown-menu {
