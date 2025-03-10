@@ -1,0 +1,35 @@
+footer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(21, 17, 13);
+    color: rgb(143, 143, 143);
+    font-family: Montserrat;
+    margin: 0;
+}
+
+.inside-footer-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.social-icon {
+    margin: 10px 10px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}

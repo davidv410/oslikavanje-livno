@@ -1,0 +1,190 @@
+body{
+    overflow-x: hidden;
+}
+
+.contact-cont-wrap {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 6vw 0 0 0;
+    padding: 2vw 0 0 0;
+    background-color: rgb(21, 17, 13);
+    color: white;
+    /* background: rgba(255, 255, 255, 0.349);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+
+
+.contact-cont {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-head {
+    width: 70%;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 4vw;
+    color: white;
+}
+
+.contact-info{
+    width: 70%;
+    font-family: Montserrat;
+    font-size: 1.4vw;
+    margin: 2vw 0 2vw .8vw;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info-up {
+    display: flex;
+    color: rgb(158, 151, 141);
+}
+
+.insta-icon {
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    margin: 0 0 0 20px;
+    color: white;
+}
+
+.face-icon {
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    color: white;
+}
+
+.contact-info-up {
+    display: flex;
+    align-items: center;
+    padding: .5vw 1vw;
+    background: rgb(21, 17, 13);;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.384);
+    border: 1px solid rgba(51, 51, 51, 0.3);
+    border-radius: 20px 0 0 20px;
+    padding-right: 1.7vw;
+}
+
+.contact-info-down {
+    display: flex;
+    align-items: center;
+    color: rgb(158, 151, 141);
+    padding: .5vw 1vw;
+    background: rgb(21, 17, 13);;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.384);
+    border: 1px solid rgba(51, 51, 51, 0.3);
+    border-radius: 0 20px 20px 0; 
+    margin: 0 0 0 .4vw;
+    padding-left: 1.7vw;
+}
+
+.city {
+    font-family: Montserrat;
+    font-size: 2vw;
+}
+
+.number{
+    color: white;
+}
+
+
+@media (max-width: 900px) {
+    .contact-info{
+        width: 100%;
+        font-size: 1.7vw;
+    }
+
+    .insta-icon {
+        width: 3vw;
+        height: 3vw;
+    }
+    
+    .face-icon {
+        width: 3vw;
+        height: 3vw;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .contact-info {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-info-up {
+        border-radius: 20px;
+        height: 4vw;
+        width: 33vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-info-down {
+        border-radius: 20px;
+        height: 4vw;
+        width: 33vw;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .insta-icon {
+        margin: 0 0 0 5px;
+    }
+
+
+}
+
+@media (max-width: 550px) {
+    .contact-head{
+        justify-content: center;
+        font-size: 12vw;
+        margin: 0 0 5vw 0;
+    }
+    .contact-info-up {
+        width: 70vw;
+        height: 10vw;
+        margin: 0 0 2vw 0;
+    }
+
+    .contact-info-down {
+        width: 70vw;
+        height: 10vw;
+    }
+
+    .contact-info{
+        font-size: 3.5vw;
+    }
+
+    .insta-icon {
+        width: 6vw;
+        height: 6vw;
+    }
+    
+    .face-icon {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .city {
+        font-size: 5vw;
+        margin: 5vw 0;
+    }
+
+    .contact-cont-wrap {
+        margin: 40vw 0 0 0;
+    }
+}

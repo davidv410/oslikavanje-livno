@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --textColor: rgb(43, 43, 43);
+}
+
+.header-wrap {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.admin {
+    position: absolute;
+    right: 3vw;
+    top: 0;
+}
+
+.header-wrap-inside {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:  Poiret One;
+}
+
+.header-title {
+    color: var(--textColor);
+}
+
+.header-btn {
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--textColor);
+    border: none;
+    height: fit-content;
+    cursor: pointer;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+}
+
+.header-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--textColor);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+.header-btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.kontakt-btn {
+    padding: 3px 15px;
+    border-radius: 20px;
+    border: 2px solid var(--textColor);
+
+    cursor: pointer;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.ham-menu {
+    display: none;
+}
+
+.dropdown-menu {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.active-menu  {
+    display: none;
+}
+
+
+.dropdown-menu-ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu-li {
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5em;
+    margin: 0 0 7vw 0;
+    cursor: pointer;
+    color: var(--textColor);
+}
+
+@media (max-width: 850px) {
+    .ham-menu {
+        display: block;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        cursor: pointer;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .kontakt-btn {
+        display: none;
+    }
+
+    .active-menu {
+        width: 100%;
+        height: 20em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+

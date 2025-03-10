@@ -1,0 +1,139 @@
+
+.about-wrap{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 10vw 0;
+    padding: 2vw 0 5vw 0;
+    /* background: rgba(255, 255, 255, 0.349);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.about {
+    width: 70%;
+    height: 100%;
+}
+
+.about-head {
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 4vw;
+    color: var(--textColor);
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    color: var(--textColor);
+}
+
+.paragraphs-div {
+    font-size: 1.2vw;
+    width: 50%;
+}
+
+.img-div {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.about-slika {
+    width: 30vw;
+    height: 38vw;
+    background-size: cover;
+    background-position-x: 30%;
+    border-radius: 20px;
+}
+
+.p-inline {
+    font-size: 2.5vw;
+    font-weight: 600;
+    line-height: 3vw;
+    margin: 1.4vw 0;
+}
+
+.customer-exp {
+    display: flex;
+    margin: 2vw 0 0 0;
+}
+
+.customer-exp-one {
+    text-align: center;
+    margin: 0 4vw 0 0;
+}
+
+.customer-exp-two {
+    text-align: center;
+}
+
+.num {
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 1200px){
+    .paragraphs-div {
+        font-size: 1.6vw;
+    }
+}
+
+@media (max-width: 780px){
+    .paragraphs-div {
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .about-wrap {
+        padding: 2vw 0 40vw 0;
+    }
+
+    .img-div {
+        display: none;
+    }
+
+    /* .about-slika {
+
+    } */
+
+    .about {
+        width: 100%;
+        height: 100%;
+    }
+
+    .paragraphs-div {
+        width: 95%;
+        font-size: 4vw;
+    }
+
+    .p-inline {
+        font-size: 6vw;
+        line-height: 1.2;
+        margin: 5vw 0;
+    }
+
+    .about-head {
+        width: 100%;
+        text-align: center;
+        font-size: 12vw;
+        margin: 10vw 0 15vw 0;
+    }
+
+    .about-wrap {
+        margin: 25vw 0 6vw 0;
+    }
+
+    .num {
+        font-size: 4vw;
+    }
+
+    .customer-exp {
+        margin: 8vw 0 0 0;
+    }
+}

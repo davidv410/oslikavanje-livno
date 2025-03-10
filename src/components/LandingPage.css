@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+.landing-page-cont {
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.landing-page-img {
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    background-size: cover;
+    background-position-y: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.filter-dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        transparent
+      );
+}
+
+.landing-page-text {
+    font-family: Plus Jakarta Sans;
+    font-weight: bold;
+    font-size: 4vw;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    bottom: 10%;
+    left: 15%;
+}
+
+.landing-page-text-small {
+    font-family: Plus Jakarta Sans;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 2vw;
+    bottom: 5%;
+    left:15%;
+    font-weight: lighter;
+}
+
+
+
+.down-arrow {
+    position: absolute;
+    right: -1%;
+    bottom: 5%;
+    width: 7%;
+    height: 7%;
+    cursor: pointer;
+}
+
+
+@media (max-width: 640px) {
+    .down-arrow {
+        width: 8%;
+        height: 8%;
+    }
+}
+
+@media (max-width: 550px) {
+    .landing-page-cont {
+        height: 160vw;
+    }
+
+    .landing-page-text {
+        font-size: 7vw;
+    }
+
+    .down-arrow {
+        right: 3%;
+        bottom: 3%;
+        width: 7%;
+        height: 7%;
+    }
+
+    .landing-page-text-small{
+        font-size: 4vw;
+    }
+}
