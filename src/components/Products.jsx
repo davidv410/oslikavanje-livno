@@ -20,11 +20,11 @@ const Products = forwardRef((props, ref) => {
         const fetchData = async () => {
             try {
                 setIsLoading(true)
-                const productTypeRes = await fetch("http://localhost:5000/product-types")
+                const productTypeRes = await fetch(`${import.meta.env.VITE_API_URL}/product-types`)
                 const productTypeData = await productTypeRes.json()
                 setProductTypes(productTypeData)
-
-                const productsRes = await fetch("http://localhost:5000/products")
+        
+                const productsRes = await fetch(`${import.meta.env.VITE_API_URL}/products`)
                 const productsData = await productsRes.json()
                 setProducts(productsData)
             } catch (error) {
@@ -76,7 +76,7 @@ const Products = forwardRef((props, ref) => {
 
     const removeProduct = async (id) => {
         try {
-            const response = await fetch("http://localhost:5000/remove-products", {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/remove-products`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
                 body: JSON.stringify({id})
