@@ -22,7 +22,7 @@ const Products = forwardRef((props, ref) => {
                 setIsLoading(true)
                 const productTypeRes = await fetch(`${import.meta.env.VITE_API_URL}/product-types`)
                 const productTypeData = await productTypeRes.json()
-                setProductTypes(productTypeData.productTypeData)
+                setProductTypes(productTypeData)
         
                 const productsRes = await fetch(`${import.meta.env.VITE_API_URL}/products`)
                 const productsData = await productsRes.json()
@@ -119,6 +119,9 @@ const Products = forwardRef((props, ref) => {
 
     return(
         <>
+        { isLoading ?  
+            <p>products are loading</p>
+        :
             <div className="products-cont-wrap" 
                  ref={ref}>
                 <div className="products-cont">
@@ -208,6 +211,7 @@ const Products = forwardRef((props, ref) => {
                    <AddProduct/>
                 </div>
             </div>
+        }
         </>
     )
 })
