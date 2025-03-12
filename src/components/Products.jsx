@@ -22,7 +22,7 @@ const Products = forwardRef((props, ref) => {
                 setIsLoading(true)
                 const productTypeRes = await fetch(`${import.meta.env.VITE_API_URL}/product-types`)
                 const productTypeData = await productTypeRes.json()
-                setProductTypes(productTypeData)
+                setProductTypes(productTypeData.productTypeData)
         
                 const productsRes = await fetch(`${import.meta.env.VITE_API_URL}/products`)
                 const productsData = await productsRes.json()
