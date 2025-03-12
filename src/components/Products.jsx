@@ -130,13 +130,15 @@ const Products = forwardRef((props, ref) => {
                         <div className="product-selector">
                             <ul className='product-ul'>
                                 { 
-                                    productTypes.map((p) => (
-                                        <li key={p.product_type} 
-                                            onClick={() => selectType(p.product_type)}
-                                            className={p.product_type === activeType ? "active" : "inactive"}>
-                                            {p.product_type}
-                                        </li>
-                                    ))
+                                    Array.isArray(productTypes) ?
+                                        productTypes.map((p) => (
+                                            <li key={p.product_type} 
+                                                onClick={() => selectType(p.product_type)}
+                                                className={p.product_type === activeType ? "active" : "inactive"}>
+                                                {p.product_type}
+                                            </li>
+                                        ))
+                                    : []
                                 }
                             </ul>
                         </div>
