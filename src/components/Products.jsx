@@ -178,14 +178,14 @@ const Products = forwardRef((props, ref) => {
                                     <PiXCircleLight className='close-zoom'/>
                             </div>
                             <div className="open-image-div"  
-                                 style={{ backgroundImage: `url(proizvodi/${zoomImage})` }}>
+                                 style={{ backgroundImage: `url(${zoomImage})` }}>
                             </div>
                         </div>
 
                         <div className="product-cards-mobile mobile">
                        
                             <div className="product-img-mob" 
-                                 style={{ backgroundImage: `url(proizvodi/${filteredData[mobileSlide] ? filteredData[mobileSlide].product_img : "Ucitava se"})` }}>
+                                 style={{ backgroundImage: `url(${filteredData[mobileSlide] ? filteredData[mobileSlide].product_img : "Ucitava se"})` }}>
                                 <div className='mobile-dot-div'>
                                     { 
                                         filteredData.map((p, i) => (
