@@ -84,7 +84,7 @@ function AddProduct () {
                         <option value="">Select type</option>
                         <option value="Boca">Boca</option>
                         <option value="Svijeca">Svijeca</option>
-                        <option value="Casa">Casa</option>
+                        <option value="Case">Case</option>
                     </select>
 
                     <button type='submit'>SUBMIT</button>

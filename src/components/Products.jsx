@@ -152,7 +152,7 @@ const Products = forwardRef((props, ref) => {
                         <div className="product-cards-desktop desktop">
                         {
                             filteredData.map((p) => (
-                                <div key={p.product_name} 
+                                <div key={p.product_id} 
                                      className="product-card">
                                     <div className="product-img" 
                                          style={{ backgroundImage: `url(${p.product_img})` }} 
