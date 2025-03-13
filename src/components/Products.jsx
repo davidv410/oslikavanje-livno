@@ -155,7 +155,7 @@ const Products = forwardRef((props, ref) => {
                                 <div key={p.product_name} 
                                      className="product-card">
                                     <div className="product-img" 
-                                         style={{ backgroundImage: `url(proizvodi/${p.product_img})` }} 
+                                         style={{ backgroundImage: `url(${p.product_img})` }} 
                                          onClick={ () => openImage(p.product_id) }></div>
                                     <div className="product-name">{p.product_name ? p.product_name : "Ucitava se"}</div>
                                     <div className="product-desc">{p.product_desc ? p.product_desc : "Ucitava se"}</div>
