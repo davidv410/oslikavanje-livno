@@ -82,8 +82,8 @@ function AddProduct () {
 
                     <select name="type" onChange={handleChange} value={formData.type}>
                         <option value="">Select type</option>
-                        <option value="Boca">Boca</option>
-                        <option value="Svijeca">Svijeca</option>
+                        <option value="Boce">Boce</option>
+                        <option value="Svijece">Svijece</option>
                         <option value="Case">Case</option>
                     </select>
 
