@@ -1,23 +1,10 @@
 import React, { useState } from 'react'
 import { jwtDecode } from 'jwt-decode';
+import CheckRole from '../Products/CheckRole';
 
 function AddProduct () {
 
     const [productWindow, setProductWindow] = useState(false)
-
-    const isLoggedIn = () => {
-        return localStorage.getItem('token') !== null
-    }
-
-    const getUserInfo = () => {
-        const token = localStorage.getItem('token')
-        if(token){
-            return jwtDecode(token)
-        }
-        return null
-    }
-
-    const userInfo = getUserInfo()
 
     const openProductWindow = () => {
         setProductWindow(!productWindow)
@@ -90,12 +77,9 @@ function AddProduct () {
                     <button type='submit'>SUBMIT</button>
                 </form>
             </div>
-            {
-                    isLoggedIn() ? (userInfo.role === 'Admin' ? 
-                    (<div>
-                            <button onClick={() => openProductWindow()}>ADD</button>
-                    </div>) : (null)) : (null)
-            }
+            <CheckRole>
+                <button onClick={() => openProductWindow()}>ADD</button>
+            </CheckRole>
         </>
     )
 }

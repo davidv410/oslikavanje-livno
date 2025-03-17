@@ -1,0 +1,13 @@
+.edit-window {
+   width: fit-content;
+   height: 10vw;
+   background-color: antiquewhite;
+   position: fixed;
+   top: 10vw;
+   padding: 10vw;
+   display: none;
+}
+
+.edit-window-open {
+    display: block;
+}

@@ -1,5 +1,5 @@
 import './LandingPage.css'
-import landingCover from '../assets/landing-cover.jpg'
+import landingCover from '../../assets/landing-cover.jpg'
 import { PiArrowCircleDown } from "react-icons/pi";
 
 

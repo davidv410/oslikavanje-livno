@@ -1,10 +1,10 @@
 import React, { useRef } from 'react'
-import Header from "./Header"
-import LandingPage from "./LandingPage"
-import Products from "./Products"
-import Contact from "./Contact"
-import Footer from './Footer'
-import About from './About'
+import Header from "./Header/Header"
+import LandingPage from "./LandingPage/LandingPage"
+import Products from "./Products/Products"
+import Contact from "./Contact/Contact"
+import Footer from './Footer/Footer'
+import About from './About/About'
 
 function App() {
 
